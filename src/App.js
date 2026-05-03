@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Counter from './components/Counter';
+import InputField from './components/InputField';
+import TodoList from './components/TodoList';
 
 function App() {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = 'App'>
+      <Counter />
+      <br />
+      <h1>Text Field Component</h1>
+      <h2>Message: {inputValue}</h2>
+      <InputField value={inputValue} onChange={handleChange} />
+      <br />
+      <h1>Todo List Component</h1>
+      <TodoList />
     </div>
   );
 }
