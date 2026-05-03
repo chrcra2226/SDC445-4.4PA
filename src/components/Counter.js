@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Counter = ({ label, onClick }) => {
     const [count, setCount] = useState(0);
     const handleIncrement = () => {
-      setCount(count + 1);
+      setCount(count + 2);
     };
     const handleDecrement = () => {
       if (count > 0) {
