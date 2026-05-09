@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SDC445-4.4PA/static/css/main.f855e6bc.css",
+    "main.js": "/SDC445-4.4PA/static/js/main.6aa16d47.js",
+    "index.html": "/SDC445-4.4PA/index.html",
+    "main.f855e6bc.css.map": "/SDC445-4.4PA/static/css/main.f855e6bc.css.map",
+    "main.6aa16d47.js.map": "/SDC445-4.4PA/static/js/main.6aa16d47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.6aa16d47.js"
+  ]
+}
